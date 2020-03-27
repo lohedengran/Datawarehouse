@@ -5,21 +5,28 @@ $purple: #9c69e2;
 $pink: #f063b8;
 
 .screen {
-  max-width: 1300px;
+  //   max-width: 1300px;
   width: 100%;
   background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: "Muli", sans-serif;
   margin: auto;
   padding: 20px;
 }
-.section1 {
-  height: 100vh;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.top {
+.section1 {
+  //   height: 100vh;
+  max-width: 1248px;
+}
+.top-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.section1__top {
   max-width: 1120px;
   width: 100%;
   display: flex;
@@ -76,6 +83,10 @@ $pink: #f063b8;
   transform: scale(1.1);
   border: 2px solid $purple;
 }
+.section1__bottom {
+  height: 100vh;
+  display: flex;
+}
 .headline {
   max-width: 645px;
   max-height: 464px;
@@ -119,9 +130,13 @@ h1 {
   max-width: 885px;
   max-height: 468px;
 }
+.section2-wrapper {
+  height: 100vh;
+}
 .section2 {
   max-width: 1117px;
   max-height: 560px;
+  margin-top: 20px;
   border-radius: 50px;
   background: rgba(240, 99, 184, 0.15);
   display: flex;
@@ -257,7 +272,7 @@ h4 {
 }
 .button3 {
   width: 150px;
-  height: 26px;
+  height: 30px;
   background: transparent;
   border: none;
   display: flex;
@@ -272,9 +287,11 @@ h4 {
 }
 .button3:hover {
   transform: scale(1.1);
+  color: $purple;
 }
 .section4 {
   height: 100vh;
+  max-width: 1118px;
 }
 .purple {
   max-width: 1118px;
@@ -350,13 +367,17 @@ h4 {
 }
 .section5 {
   height: 100vh;
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
 }
 .section5__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 110px;
-  border: 1px solid $pink;
   margin-bottom: 50px;
 }
 .title {
@@ -395,7 +416,6 @@ h4 {
   min-height: 408px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid $purple;
 }
 .datawarehouse {
   font-style: normal;
@@ -426,7 +446,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: 1px dashed $purple;
 }
 h6 {
   font-style: normal;
@@ -462,12 +481,10 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: 1px dashed $pink;
 }
 .footer__right {
   display: flex;
   flex-direction: column;
-  border: 1px dashed blue;
 }
 .social-media {
   display: flex;

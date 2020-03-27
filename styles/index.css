@@ -1,21 +1,28 @@
 .screen {
-  max-width: 1300px;
   width: 100%;
   background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: "Muli", sans-serif;
   margin: auto;
   padding: 20px;
 }
 
-.section1 {
-  height: 100vh;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.top {
+.section1 {
+  max-width: 1248px;
+}
+
+.top-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.section1__top {
   max-width: 1120px;
   width: 100%;
   display: flex;
@@ -81,6 +88,11 @@
   border: 2px solid #9c69e2;
 }
 
+.section1__bottom {
+  height: 100vh;
+  display: flex;
+}
+
 .headline {
   max-width: 645px;
   max-height: 464px;
@@ -130,9 +142,14 @@ h1 {
   max-height: 468px;
 }
 
+.section2-wrapper {
+  height: 100vh;
+}
+
 .section2 {
   max-width: 1117px;
   max-height: 560px;
+  margin-top: 20px;
   border-radius: 50px;
   background: rgba(240, 99, 184, 0.15);
   display: flex;
@@ -285,7 +302,7 @@ h4 {
 
 .button3 {
   width: 150px;
-  height: 26px;
+  height: 30px;
   background: transparent;
   border: none;
   display: flex;
@@ -301,10 +318,12 @@ h4 {
 
 .button3:hover {
   transform: scale(1.1);
+  color: #9c69e2;
 }
 
 .section4 {
   height: 100vh;
+  max-width: 1118px;
 }
 
 .purple {
@@ -390,6 +409,11 @@ h4 {
 
 .section5 {
   height: 100vh;
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
 }
 
 .section5__top {
@@ -397,7 +421,6 @@ h4 {
   justify-content: space-between;
   align-items: center;
   height: 110px;
-  border: 1px solid #f063b8;
   margin-bottom: 50px;
 }
 
@@ -442,7 +465,6 @@ h4 {
   min-height: 408px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #9c69e2;
 }
 
 .datawarehouse {
@@ -477,7 +499,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: 1px dashed #9c69e2;
 }
 
 h6 {
@@ -519,13 +540,11 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: 1px dashed #f063b8;
 }
 
 .footer__right {
   display: flex;
   flex-direction: column;
-  border: 1px dashed blue;
 }
 
 .social-media {
